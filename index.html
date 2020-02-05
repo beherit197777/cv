@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/skeleton.css"/>
+    <title>Burmistrov Sergey - Ruby on Rails developer</title>
+    <style>
+        body{
+            background-color: #123456; /* Цвет фона веб-страницы */
+        }
+
+        p {
+            text-align: left;
+            text-indent: 45px;
+        }
+
+        .middle {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-indent: 0px;
+        }
+
+        hr {
+            border-color: #123456;
+            width: 80%;
+        }
+
+        .pic {
+            width: 50px;
+            display: inline-flex;
+            padding: 5px;
+            padding-top: 15px;
+        }
+
+        .special_text {
+            letter-spacing: 1px;
+            display: block;
+            line-height: 30px;
+            text-indent: 15px;
+        }
+
+        .block {
+            display: block;
+            width: 250px;
+            margin: auto;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body class="container">
+<div style="background-color: #D8D8F6">
+    <div class="row">
+        <div style="text-align: center">
+            <h4>Бурмистров Сергей</h4>
+            <h4>Ruby on Rails разработчик</h4>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="one-half column middle">
+                <img src="assets/img/me.png" alt="[Фото]" width="200" height="200" align=center/>
+                <h5>Контактная информация</h5>
+                <p class="middle">Телефон: +7 9031556787</p>
+                <p class="middle">г. Подольск, Московская облпсть</p>
+                <p class="middle">E-mail: beherit1977@gmail.com</p>
+                <a href="mailto:beherit1977@gmail.com?Subject=Dear%20Mr.%20Burmistrov" class="button button-primary" target="_top">Написать мне</a>
+
+                <div class="row">
+                    <div class="container">
+                        <a href="https://github.com/beherit1977"><img src="data/github.png" alt="[github pic]" class="pic"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="one-half column">
+                <div id="skills">
+                    <h5>Навыки</h5>
+                    <ul>
+                        <li>Ruby, Ruby on Rails</li>
+                        <li>Gems: Device, capistrano, pandit, Carrierwave, rmagic</li>
+                        <li>TDD, Rspec, Capybara</li>
+                        <li>Git, Github</li>
+                        <li>Английский язык Upper-intermediate.</li>
+                        <li>XML, JSON</li>
+                        <li>Use case, CRUD(L)</li>
+                        <li>HTML, CSS, Bootstrap, Skeleton</li>
+                        <li>Deploy: Heroku, VPS(nginx + passenger + postfix).</li>
+                    </ul>
+                    <h5>Желаемая позиция</h5>
+                    <p>Junior RoR developer.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="container">
+            <div class="one-half column">
+                <a href="data/motivation.html" class="button block">Мотивационное письмо</a>
+                <a href="#dev_exp" class="button block">Опыт разработки</a>
+                <a href="#proj" class="button block">Проекты</a>
+                <a href="#edu" class="button block">Образование</a>
+                <a href="#exp" class="button block">Опыт работы</a>
+                <a href="#jobs" class="button block">Места работы</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="container">
+            <h5 id="proj">Проекты</h5>
+            <h6>Приложение Askme</h6>
+            <h6>Приложение BBQ</h6>
+            <a><img src="data/ask.png" alt="[скрин приложения]" style="width: 200px;"></a>
+            <a href="https://github.com/beherit1977/ask" class="special_text">Репозиторий проекта</a>
+            <p>Приложение - соц. сеть для задавания-отвечания на вопросы (аналог сервиса ask.fm). В приложении реализованна
+                регистрация и аутентификация пользователя (без сторонних библиотек), индивидуальная настройка внешнего вида (аватарка, цвет
+                фон профиля), интернационализация. Приложения написано с использоватением Bootstrap 3. Встроена
+                Invisible Captcha защита от спама. Деплой приложения выполнен на сервис Heroku.</p>
+            <h6>Приложение BBQ</h6>
+            <a><img src="data/bbq.png" alt="[скрин приложения]" style="width: 200px;"></a>
+            <a href="https://github.com/beherit1977/bbq" class="special_text">Репозиторий проекта</a>
+            <p>Приложение для организации встреч. В приложении реализована работа с пользователями (gem devise), загрузка
+                (gem carrierwave) и обработка (gem rmagick) фотографий. Так же реализованно хранение загруженного материала в
+                облачном хранилище на AWS S3. Реализована отправка почты через приложение, с использованием ActionMailer, Sendgrid(Heroku),
+                Postfix(VPS). Для деплоя приложения был приобретен VPS, доменное имя и настроены DNS связи для доступа по URL.
+                Была настроена ОС ubuntu server 16.04, установлен rbenv, ruby, rails. Установлен и настроен Postgres, nginx,
+                passenger, postfix. Был выполнен деплой на VPS ноду в ручную и при помощи gem'а capistrano.
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="container">
+            <div id="dev_exp">
+                <h5>Опыт разработки</h5>
+                <p> Я начинающий Ruby on Rails разработчик. На протяжении 2 лет я интересовался веб-разработкой и проходил различные
+                    мини-курсы на Codeacademy, Udemy. Решал задачи на Codewars.
+                </p>
+                <p> Я закончил 5-месячный интенсив-курс по разработке на Ruby on Rails. Работал на Ruby (2.4.1-2.5.1). Написал
+                    ряд программ.
+                </p>
+                <p>В рамках курса я разработал 3 Rails приложения. Работал с базами данных SQLite3 и PostgreSQL. Освоил методы
+                    тестирования моделей, вьюх и контроллеров, познакомился с концепцией TDD. Задеплоил приложения на хостинг Heroku и
+                    на свою VPS ноду. Решил задачи отправки почты, интернационализации проекта, загрузки фотографий, разграничения
+                    доступа к ресурсам, защита базы данных от взломов и инъекций, тестирования работоспособности, деплоя приложения.
+                    Особое внимание уделено культуре программирования, код стайлу, отладки приложения, работы с логами и исправлением
+                    ошибок.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="container">
+            <div id="exp">
+                <h5>Опыт Работы</h5>
+                <p> Я работаю 5 лет системным администратором на разных предприятиях.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="container">
+            <div id="edu">
+                <h5>Об орбазовании</h5>
+                <p>    Закончил Московский Государственный Социальный Университет </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="container">
+            <div id="jobs">
+                <h5>Места работы</h5>
+                <ul>
+                    <li>ОАО "Автобан "</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
